@@ -19,10 +19,12 @@
   </mat-form-field>
   <br>
   <br>
-<hr>
+<!-- <hr> -->
 
   <div class="table-container">
-    <table mat-table [dataSource]="dataSource" matSort>
+
+    <!-- <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table" matSort> -->
+    <table mat-table [dataSource]="dataSource"  matSort>
 
     
       <ng-container matColumnDef="id">
@@ -53,7 +55,7 @@
       <ng-container matColumnDef="status">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Status </th>
         <td mat-cell *matCellDef="let row">
-          <button mat-raised-button color="secondary"  (click)="openStatusForm(row) "> {{row.status}}</button></td>
+          <button mat-raised-button color="secondary" matTooltip="Change Status"  (click)="openStatusForm(row) "> {{row.status}}</button></td>
           <!-- <button mat-raised-button color="accent" > {{row.status}}</button></td> -->
           <!-- <button mat-raised-button (click)="toggleButton()">{{ isActive ? 'Active' : 'Inactive' }}</button> -->
           <!-- <button mat-raised-button color="secondary" mat-button (click)="toggleButtonState()">    {{ isButtonActive ? 'Active' : 'Inactive' }} </button></td> -->
@@ -92,9 +94,10 @@
         <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
       </tr>
     </table>
-<hr>
+<!-- <hr> -->
     <mat-paginator 
     [pageSizeOptions]="[4, 8, 12, 16,20,50,100,200,500,1000]" 
+    showFirstLastButtons
     aria-label="Select page of patient">
   </mat-paginator>
   </div>

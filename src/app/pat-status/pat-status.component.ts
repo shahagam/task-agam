@@ -17,16 +17,11 @@ export class PatStatusComponent implements OnInit {
   status: boolean | undefined;
 
 
-  constructor(
-    private fb: FormBuilder,
-    private patService: PatientService,
-    private dialogRef: MatDialogRef<PatAddEditComponent>,
-
-    @Inject(MAT_DIALOG_DATA) public data: any,
-    private coreService: CoreService, 
-  ) {
-    this.patForm = this.fb.group({
-     
+  constructor( private fb: FormBuilder, private patService: PatientService, private dialogRef: MatDialogRef<PatAddEditComponent>, private coreService: CoreService,
+   
+   @Inject(MAT_DIALOG_DATA) public data: any, ) {
+     this.patForm = this.fb.group({
+    
       firstName: '',
       lastName: '',
       email: '',
@@ -46,7 +41,7 @@ export class PatStatusComponent implements OnInit {
       if (this.data) {
         this.patService.updatePatient(this.data.id, this.patForm.value).subscribe({
             next: (val: any) => {
-              this.coreService.openSnackBar('Status updated');
+              this.coreService.openSnackBar('Status updated!');
               this.dialogRef.close(true);
             },
             error: (err: any) => {

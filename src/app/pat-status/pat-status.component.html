@@ -4,10 +4,15 @@
 <form [formGroup]="patForm" (ngSubmit)="onFormSubmit()">
 
 <div class="row">
-    <mat-radio-group aria-label="Select an option" formControlName="status" required>
+    <mat-radio-group  aria-label="Select an option" formControlName="status" required>
         <mat-label><b>Status : </b></mat-label>
-        <mat-radio-button color="primary"  value="ACTIVE">Active</mat-radio-button>
+        <div class="radio-button-box">
+        <mat-radio-button value="ACTIVE">Active</mat-radio-button>
+    </div>
+    &nbsp;
+    <div class="radio-button-box">
         <mat-radio-button value="INACTIVE">Inactive</mat-radio-button>
+    </div>
     </mat-radio-group>
 </div>
 <br>

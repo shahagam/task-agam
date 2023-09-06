@@ -19,4 +19,24 @@
       flex: 1;
     }
   }
+  .radio-button-box {
+    border: 1px solid #0a0a0a; 
+    padding: 1px; 
+    padding-right: 10px;
+    display: inline-block;
+    border-radius: 70px; 
+  }
   
+  .mat-mdc-row .mat-mdc-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .mat-mdc-row:hover .mat-mdc-cell {
+    border-color: currentColor;
+  }
+  
+  .demo-row-is-clicked {
+    font-weight: bold;
+  }

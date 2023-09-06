@@ -22,6 +22,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { PatAddEditComponent } from './pat-add-edit/pat-add-edit.component';
 import { PatStatusComponent } from './pat-status/pat-status.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { PatStatusComponent } from './pat-status/pat-status.component';
     MatPaginatorModule,
     MatSortModule,
     MatSnackBarModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

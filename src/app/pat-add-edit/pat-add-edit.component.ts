@@ -12,16 +12,11 @@ import { PatientService } from '../services/patient.service';
 })
 export class PatAddEditComponent implements OnInit {
   patForm: FormGroup;
+  selectedOption = 'ACTIVE';
 
-
-  constructor(
-    private fb: FormBuilder,
-    private patService: PatientService,
-    private dialogRef: MatDialogRef<PatAddEditComponent>,
-
-    @Inject(MAT_DIALOG_DATA) public data: any,
-    private coreService: CoreService, 
-  ) {
+  constructor( private fb: FormBuilder, private patService: PatientService, private dialogRef: MatDialogRef<PatAddEditComponent>,  private coreService: CoreService, 
+   
+    @Inject(MAT_DIALOG_DATA) public data: any, ) {
     this.patForm = this.fb.group({
      
       firstName: '',
