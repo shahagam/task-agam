@@ -1,0 +1,21 @@
+<div mat-dialog-title>
+    <h1>Status (Action)</h1>
+</div>
+<form [formGroup]="patForm" (ngSubmit)="onFormSubmit()">
+
+<div class="row">
+    <mat-radio-group aria-label="Select an option" formControlName="status" required>
+        <mat-label><b>Status : </b></mat-label>
+        <mat-radio-button color="primary"  value="ACTIVE">Active</mat-radio-button>
+        <mat-radio-button value="INACTIVE">Inactive</mat-radio-button>
+    </mat-radio-group>
+</div>
+<br>
+<br>
+<div mat-dialog-actions class="action">
+    <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+    <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+
+</div>
+
+</form>

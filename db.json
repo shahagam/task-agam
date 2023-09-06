@@ -1,0 +1,84 @@
+{
+  "patients": [
+    {
+      "firstName": "Dev",
+      "lastName": "vyas",
+      "email": "ty@gmail.com",
+      "phoneNo": "9898950504",
+      "status": "ACTIVE",
+      "id": 1
+    },
+    {
+      "firstName": "Mann",
+      "lastName": "Shah",
+      "email": "man@net.co",
+      "phoneNo": "7897988976",
+      "status": "INACTIVE",
+      "id": 2
+    },
+    {
+      "firstName": "Jay ",
+      "lastName": "trivedi",
+      "email": "jay@gmail.net.co",
+      "phoneNo": "9876545987",
+      "status": "INACTIVE",
+      "id": 4
+    },
+    {
+      "firstName": "Yash ",
+      "lastName": "athar",
+      "email": "ugu@gmail.com",
+      "phoneNo": "9878908798",
+      "status": "ACTIVE",
+      "id": 6
+    },
+    {
+      "firstName": "Yash",
+      "lastName": "thakkar",
+      "email": "geg@net.in",
+      "phoneNo": "9677786988",
+      "status": "ACTIVE",
+      "id": 7
+    },
+    {
+      "firstName": "Goa",
+      "lastName": "",
+      "email": "yty@haak.co",
+      "phoneNo": "9678676890",
+      "status": "INACTIVE",
+      "id": 8
+    },
+    {
+      "firstName": "lm",
+      "lastName": "",
+      "email": "dsds@gmail.com",
+      "phoneNo": "9798407927",
+      "status": "ACTIVE",
+      "id": 9
+    },
+    {
+      "firstName": "wew",
+      "lastName": "ds",
+      "email": "nk@jgwg.co",
+      "phoneNo": "6875865423",
+      "status": "ACTIVE",
+      "id": 10
+    },
+    {
+      "firstName": "ava",
+      "lastName": "nsj",
+      "email": "guwh@gmail.xj",
+      "phoneNo": "8797989080",
+      "status": "INACTIVE",
+      "id": 11
+    },
+    {
+      "firstName": "fara",
+      "lastName": "",
+      "email": "ac@gmaji.com",
+      "phoneNo": "7987890449",
+      "status": "ACTIVE",
+      "id": 12
+    }
+  ]
+}
